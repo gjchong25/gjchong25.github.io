@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!--DOCTYPE represents the document type, helps browsers display web pages correctly-->
+<!--HYPER TEXT MARKUP LANGUAGE-->
+<html lang = "en">
+	<head>
+		<meta charset="utf-8"> <!--defines meta data for HTML doc-->
+		<title> Grace Chong</title>
+		<link rel="stylesheet" href="style.css"> <!--defines the relationship between a doc and an external resource-->
+		<script src = "script.js"></script>
+	</head>
+
+	<body>
+		<!--<header>
+			<div id = "header">
+			&lt Hello World! / &gt 
+			</div>
+		</header>-->
+
+		<div class = "parallax"><div class="centered">&lt Hello World! / &gt </div></div>
+
+		<!--<img src = "MyWebsite/journal.jpg" width=100% height=auto>-->
+		
+			<div class = "icon">
+			<!--<img src = "MyWebsite/mushroom.png" alt = "mushroom" width="100" height="100">-->
+			GRACE CHONG
+			</div>
+		
+
+		<div id = "navbar">
+			<a href="#contactmepart">Contact</a>
+			<a href="https://www.google.com">Cool Stuff</a>
+			<a href="MyWebsite/Grace_Chong.pdf">Resume</a>
+			<a href="#aboutmepart">About</a>
+			<a href="">Home</a>
+		</div>
+
+	<script>
+	window.onscroll = function() {stickyNav()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function stickyNav() {
+		console.log("navBar = " + navbar);
+		console.log("scrollY = " + window.scrollY);
+
+	  if (window.scrollY >= sticky) {
+	    navbar.classList.add("sticky");
+	    document.body.style.paddingTop = nav.offsetHeight + 'px';
+	    document.body.classList.add("sticky");
+	  } else {
+	    navbar.classList.remove("sticky");
+	    document.body.style.paddingTop = 0;
+	    document.body.classList.remove("sticky");
+	  }
+	}
+	window.addEventListener("scroll", stickyNav);
+	</script>
+
+				<!-- page content -->
+		 <!--this makes a line break in the page-->
+	<a id = "aboutmepart">
+	<center><div id = "intro"> <br><br><br><h1>NICE TO MEET YOU, I'M GRACE.</h1> </div></a>
+
+
+	<br><br><br>
+	<img src="MyWebsite/myface.png"	alt="person" width="260px" height="250px"></center>
+
+	<!--<hr size = "3" color=black>-->
+
+	<p> Thanks for stopping by. My name is Grace Chong, and I am currently a sophomore studying Computer Science and Cognitive Science at the <a href="https://www.seas.upenn.edu/">University of Pennsylvania</a> in the School of Engineering and Applied Sciences. This summer I will be joining <a href="https://www.microsoft.com/en-us">Microsoft</a> as a software engineering and program management intern in Redmond, Washington. I am an eager, diligent student and enjoy employing my creativity and imagination to solve technical problems. I'm passionate about exploring the intersection of technology, creativity, and social impact!</p><br><br>
+
+
+	<div id = "flex-container">
+		<div class="flex-item"><img src = "MyWebsite/code5.png" alt="TECH" width="120px" height="120px">
+			<br><br>
+			<h1>TECH</h1> <br>
+
+			Technology and its infinite applications have intrigued me ever since I took an interest to coding in high school. After participating in Girls Who Code in 2016, I realized it was a field I wanted to pursue in college! <br><br>
+		</div>
+
+		<div class="flex-item"><img src = "MyWebsite/design5.png" alt="DESIGN" width="120px" height="120px"> 
+			<br><br>
+			<h1>DESIGN</h1><br>
+
+			I love finding ways to approach logical or technical problems in a creative light. With that being said, I'm deeply excited about fields like UX and graphic design.<br><br>
+		</div>
+
+		<div class="flex-item"><img src = "MyWebsite/impact5.png" alt="TECH" width="120px" height="120px"> 
+			<br><br>
+			<h1>IMPACT</h1>
+			<br>
+
+			All my career aspirations boil down to a simple question: how can I use my skills to better peoples' lives? To this end, I try to stay active politically and socially, and am passionate about technology for social impact.<br><br>
+			<br>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="butt"> <a href="MyWebsite/Grace_Chong.pdf" class="button">RESUME</a></div>
+
+	<br><br><br><br><br><br>
+
+	<!--<div class = "threeaspects"> 
+		TECH, DESIGN, IMPACT
+	</div>-->
+	<a id ="contactmepart">
+	<div class="contact"> 
+		<h1>CONTACT</h1>
+		
+		<!--<div class="contacttext">Let's chat.</div>-->
+		<br><br><br><br>
+		<center><div class = "row">
+			
+			<div class = "col">
+				<a href="https://www.linkedin.com/in/gracejchong/"><img src="MyWebsite/linkedin.png" alt="linkedin" width="40px" height="40px">
+				</a>
+			</div>
+			
+			<div class = "col">
+
+
+				<a href="mailto:gjchong@seas.upenn.edu?subject=Hello!"><img src = "MyWebsite/mail.png" alt="mail" width="40px" height="40px">
+				</a> 
+			</div>
+
+			<div class = "col">
+				<a href="https://www.facebook.com/grace.chong.54"><img src = "MyWebsite/facebook.png" alt="facebook" width="37px" height="37px"> 
+				</a>
+			</div>
+
+			<div class = "col">
+				<a href="https://github.com/gjchong25"><img src = "MyWebsite/github.svg" alt="github" width="37px" height="37px"> 
+				</a>
+			</div>
+		</div></center>
+		<br><br><div class="contacttext2">&copy 2019 Grace Chong :)</div>
+		
+	</div></a>
+
+	</body>
+</html>
