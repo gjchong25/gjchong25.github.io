@@ -1,0 +1,277 @@
+* {
+	border:1px;
+	border-width: 2px;
+	border-color:red;
+	text-align: center;
+	margin:0;
+	font-family: 'Arsenal', font-size:22px;
+}
+
+p {
+	margin:45px;
+	text-align: center;
+	font-size: 14px;
+	background-color: white;
+	font-family: Trebuchet MS, sans-serif;
+	padding:10px;
+	width:500px;
+	display:inline-block;
+	/*margin-left:380px;
+	margin-right:380px;*/
+	color:#828286;
+	line-height:200%;
+}
+
+h2 {
+	color: #828286;
+	font-size: 20px;
+	text-align: center;
+}
+
+h1 {
+	text-align:center;
+	color:black;
+	/*font-family:"Noto Sans", sans-serif;*/
+	font-family: Trebuchet MS, sans-serif;
+}
+
+
+header {
+	padding: 50px;
+	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		),
+		url(MyWebsite/journal.jpg);
+	background-size:cover;
+	/*height:60vh;*/
+	height: 60vh;
+}
+
+#header {
+	text-align:center;
+	font-size:50px;
+	color:white;
+	z-index:80;
+	position: absolute;
+	top: 230px;
+	left: 0;
+	right:0;
+	bottom:0;
+	vertical-align: center;
+	font-family: 'Antic';
+}
+
+#city {
+	width:100%;
+	height:auto;
+}
+
+/*img {
+	width: 100%;
+	height:auto;
+}*/
+
+/* mushroom - replace with logo for website */
+
+.parallax {
+	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		),
+		url(MyWebsite/journal.jpg);
+	min-height: 600px;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.centered {
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:white;
+	font-size: 45px;
+	font-family:Lato, sans-serif;
+	letter-spacing:5px;
+}
+
+.icon {
+	float: left;
+	padding:30px;
+	background-color:white;
+	font-family: "Tahoma", Geneva, sans-serif;
+	color:#5468E9;
+
+}
+
+#navbar {
+	text-align: center;
+	overflow: hidden;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+	position: relative;
+	background-color: white;                                            ;
+
+}
+
+/* navigation bar */
+#navbar a {
+	float: right;
+	font-size: 15px;
+	color: #828286;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	padding: 30px; /*spacing between the words in menu*/
+	background-color: white;
+	padding-right:40px;
+
+}
+
+#navbar a:hover {
+	color: #5468E9;
+}
+
+a {
+	color: blue;
+	-o-transition:color .3s ease-out, background 1s ease-in;
+	-ms-transition:color .3s ease-out, background 1s ease-in;
+	-moz-transition:color .3s ease-out, background 1s ease-in;
+	-webkit-transition:color .3s ease-out, background 1s ease-in;
+	transition: color .3s ease-out, background 1s ease-in;
+}
+a:hover {
+	color:#5468E9;
+}
+
+pre {
+	text-align:center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  /*width: 100%;*/
+  z-index:1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#intro {
+	text-align:center;
+	font-family: "Tahoma", Geneva, sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+a:link {
+	text-decoration:none;
+	color:#5468E9;
+}
+
+.threeaspects {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+	url(MyWebsite/coolbackground.png);
+	height:700px;
+}
+
+.threeimage {
+	display:grid;
+	grid-template-columns: 3fr 3fr 3fr;
+}
+
+
+#flex-container {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:800px;
+	margin: 0 auto;
+	font-family:Trebuchet MS, sans-serif;
+	text-align:center;
+}
+
+.flex-item {
+	width: 230px;
+	height:200px;
+	background:white;
+	color:#828286;
+	line-height:200%;
+	font-size:14px;
+}
+
+.button {
+	/* background-color:#5468E9;*/
+	padding: 15px 32px;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size: 16px;
+	font-family:Trebuchet MS, sans-serif;
+	border: 2px solid #5468E9;
+	transition-duration:0.3s;
+
+}
+
+.button:hover {
+	background-color:#5468E9;
+	color:white;
+}
+
+
+.contact {
+	background-color:#DBDBDB;
+	padding:100px;
+}
+
+.contacttext {
+	width:500px;
+	display:inline-block;
+	line-height:50px;
+	font-family:Trebuchet MS, sans-serif;
+}
+
+.contacttext2 {
+	width:500px;
+	display:inline-block;
+	line-height:50px;
+	font-family:Trebuchet MS, sans-serif;
+	color:grey;
+	font-size:14px;
+}
+
+.col {
+	float:left;
+	width:5%;
+	padding:1px;
+	margin-left:60px;
+}
+.row::after {
+	content:"";
+	clear:both;
+	display:table;
+}
+
+.row {
+	width:400px;
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
